@@ -15,7 +15,7 @@ $id = go(function() use (&$flag){
 });
 
 go(function () use (&$flag) {
-	$id = co::getUid();
+    $id = co::getUid();
     echo "start coro $id\n";
     echo "coro 2 set flag = false\n";
     $flag = false;

@@ -14,9 +14,9 @@ $http->on("request", function ($request, $response) {
     if($request->get['p'] == 1) {
     	$i = 0;
     	// 8s CPU heavy logics
-	    while ($i < 1000000000) {
-	        $i++;
-	    }
+	while ($i < 1000000000) {
+	  $i++;
+	}
     }
     
     $response->end("Hello World\n");
