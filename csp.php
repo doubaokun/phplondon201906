@@ -8,7 +8,7 @@ $producer = go(function() use ($chan) {
     while(1) {
     	$time = date('Y-m-d H:i:s', time());
     	$chan->push($time);
-    	co:sleep(1);
+    	co::sleep(1);
     }
 });
 
