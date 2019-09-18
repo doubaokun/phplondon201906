@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install vim -y && \
 
 RUN cd /tmp && git clone https://github.com/swoole/swoole-src.git && \
 	cd swoole-src && \
-	git checkout v4.4.0-alpha && \
+	git checkout v4.4.5 && \
     phpize  && \
     ./configure  --enable-openssl && \
     make && make install
